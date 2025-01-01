@@ -1,0 +1,51 @@
+{
+  "version": "2.0",
+  "routeKey": "POST /subscriptions",
+  "rawPath": "/subscriptions",
+  "rawQueryString": "",
+  "headers": {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "user-agent": "Mozilla/5.0",
+    "host": "api.example.com"
+  },
+  "requestContext": {
+    "accountId": "123456789012",
+    "apiId": "api-id",
+    "domainName": "api.example.com",
+    "domainPrefix": "api",
+    "http": {
+      "method": "POST",
+      "path": "/subscriptions",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "192.168.1.1",
+      "userAgent": "Mozilla/5.0"
+    },
+    "authorizer": {
+      "jwt": {
+        "claims": {
+          "auth_time": "1735616345",
+          "client_id": "",
+          "event_id": "",
+          "exp": "1735619945",
+          "iat": "1735616345",
+          "iss": "",
+          "jti": "",
+          "origin_jti": "",
+          "scope": "aws.cognito.signin.user.admin",
+          "sub": "18c8d497-a091-7028-e34e-25479730f6d0",
+          "token_use": "access",
+          "username": "newuser"
+        },
+        "scopes": null
+      }
+    },
+    "requestId": "request-id-123",
+    "routeKey": "POST /subscriptions",
+    "stage": "$default",
+    "time": "10/Feb/2024:13:40:00 +0000",
+    "timeEpoch": 1707573600000
+  },
+  "body": "{\"subscriptionService\":\"joke-service\",\"subscriptionType\":\"daily-joke\",\"subscriptionAttributes\":{\"attribute1\":\"test\",\"attribute2\":false,\"attribute3\":100}}",
+  "isBase64Encoded": false
+}
